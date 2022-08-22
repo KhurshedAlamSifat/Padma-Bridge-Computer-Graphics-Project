@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1661154183 source:c:\users\khurshed alam sifat\documents\all code\podmabridge\main.cpp
+1661197648 source:c:\users\khurshed alam sifat\documents\all code\podmabridge\main.cpp
 	<Windows.h>
 	<GL/glut.h>
 	<math.h>

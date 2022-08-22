@@ -2512,44 +2512,44 @@ void ship2()
 {
 glBegin(GL_QUADS);
 glColor3ub(25,25,112);
-glVertex2f(350,40+70);
-glVertex2f(380,40+70);
-glVertex2f(380,55+70);
-glVertex2f(330,55+70);
+glVertex2f(350,40+50);
+glVertex2f(380,40+50);
+glVertex2f(380,55+50);
+glVertex2f(330,55+50);
 glEnd();
 
 glLineWidth(1);
 glBegin(GL_LINE_LOOP);
 glColor3ub(0,0,0);
-glVertex2f(350,40+70);
-glVertex2f(380,40+70);
-glVertex2f(380,55+70);
-glVertex2f(330,55+70);
+glVertex2f(350,40+50);
+glVertex2f(380,40+50);
+glVertex2f(380,55+50);
+glVertex2f(330,55+50);
 glEnd();
 
 glBegin(GL_QUADS);
 glColor3ub(128,129,236);
-glVertex2f(340,55+70);
-glVertex2f(373,55+70);
-glVertex2f(373,65+70);
-glVertex2f(350,65+70);
+glVertex2f(340,55+50);
+glVertex2f(373,55+50);
+glVertex2f(373,65+50);
+glVertex2f(350,65+50);
 glEnd();
 
 glLineWidth(1);
 glBegin(GL_LINE_LOOP);
 glColor3ub(0,0,0);
-glVertex2f(340,55+70);
-glVertex2f(373,55+70);
-glVertex2f(373,65+70);
-glVertex2f(350,65+70);
+glVertex2f(340,55+50);
+glVertex2f(373,55+50);
+glVertex2f(373,65+50);
+glVertex2f(350,65+50);
 glEnd();
 
 glBegin(GL_QUADS);
 glColor3ub(220,20,60);
-glVertex2f(350,65+70);
-glVertex2f(370,65+70);
-glVertex2f(355,70+70);
-glVertex2f(355,70+70);
+glVertex2f(350,65+50);
+glVertex2f(370,65+50);
+glVertex2f(355,70+50);
+glVertex2f(355,70+50);
 glEnd();
 }
 
@@ -2600,6 +2600,602 @@ glutPostRedisplay();
 glutSwapBuffers();
 }
 
+void nightsky()
+{
+     glBegin(GL_QUADS);
+     glColor3ub(0,0,0);
+     glVertex2f(0,500 );
+     glColor3ub(0,0,0);
+     glVertex2f(700,500);
+     glColor3ub(160,160,160);
+     glVertex2f(700,250);
+     glColor3ub(160,160,160);
+     glVertex2f(0,250);
+     glEnd();
+}
+
+void moon()
+{
+    glColor3ub(254, 252, 215);
+    DrawCircle(70,410, 20, 10000);
+}
+
+
+void star()
+{
+glPointSize(3.0);
+glBegin(GL_POINTS);
+glColor3f(190,194,203);
+glVertex2f(5,490);
+glVertex2f(30,450);
+glVertex2f(50,490);
+glVertex2f(95,480);
+glVertex2f(100,400);
+glVertex2f(145,430);
+glVertex2f(175,420);
+glVertex2f(160,480);
+glVertex2f(200,470);
+glVertex2f(260,370);
+glVertex2f(310,480);
+glVertex2f(340,390);
+glVertex2f(380,460);
+glVertex2f(405,450);
+glVertex2f(305,485);
+glVertex2f(430,490);
+glVertex2f(455,35);
+glVertex2f(475,480);
+glVertex2f(490,385);
+glVertex2f(510,450);
+glVertex2f(530,380);
+glVertex2f(560,490);
+glVertex2f(565,450);
+glVertex2f(590,475);
+glVertex2f(620,480);
+glVertex2f(645,345);
+glVertex2f(665,388);
+glVertex2f(670,465);
+glVertex2f(695,490);
+ glEnd();
+}
+
+void nightrightlamp()
+{
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(354+60+60+60+60+60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(372+60+60+60+60+60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(363+60+60+60+60+60,363);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(354+60+60+60+60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(372+60+60+60+60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(363+60+60+60+60,363);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(354+60+60+60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(372+60+60+60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(363+60+60+60,363);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(354+60+60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(372+60+60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(363+60+60,363);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(354+60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(372+60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(363+60,363);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(354,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(372,325);
+     glColor3ub(255,255,254);
+    glVertex2f(363,363);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(350-60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(368-60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(359-60,363);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(350-60-60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(368-60-60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(359-60-60,363);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(350-60-60-60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(368-60-60-60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(359-60-60-60,363);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(350-60-60-60-60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(368-60-60-60-60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(359-60-60-60-60,363);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(350-60-60-60-60-60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(368-60-60-60-60-60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(359-60-60-60-60-60,363);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(350-60-60-60-60-60-60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(368-60-60-60-60-60-60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(359-60-60-60-60-60-60,363);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(0,0,0);
+
+    //right
+    glVertex2f(360-60-60-60-60-60-60,325 );// lamp stand
+    glVertex2f(362-60-60-60-60-60-60,325);
+    glVertex2f(362-60-60-60-60-60-60,365);
+    glVertex2f(360-60-60-60-60-60-60,365);
+
+    glVertex2f(356-60-60-60-60-60-60,362 );// lamp ligth
+    glVertex2f(360-60-60-60-60-60-60,360);
+    glVertex2f(360-60-60-60-60-60-60,363);
+    glVertex2f(356-60-60-60-60-60-60,365);
+
+    glVertex2f(360-60-60-60-60-60,325 );// lamp stand
+    glVertex2f(362-60-60-60-60-60,325);
+    glVertex2f(362-60-60-60-60-60,365);
+    glVertex2f(360-60-60-60-60-60,365);
+
+    glVertex2f(356-60-60-60-60-60,362 );// lamp ligth
+    glVertex2f(360-60-60-60-60-60,360);
+    glVertex2f(360-60-60-60-60-60,363);
+    glVertex2f(356-60-60-60-60-60,365);
+
+    glVertex2f(360-60-60-60-60,325 );// lamp stand
+    glVertex2f(362-60-60-60-60,325);
+    glVertex2f(362-60-60-60-60,365);
+    glVertex2f(360-60-60-60-60,365);
+
+    glVertex2f(356-60-60-60-60,362 );// lamp ligth
+    glVertex2f(360-60-60-60-60,360);
+    glVertex2f(360-60-60-60-60,363);
+    glVertex2f(356-60-60-60-60,365);
+
+    glVertex2f(360-60-60-60,325 );// lamp stand
+    glVertex2f(362-60-60-60,325);
+    glVertex2f(362-60-60-60,365);
+    glVertex2f(360-60-60-60,365);
+
+    glVertex2f(356-60-60-60,362 );// lamp ligth
+    glVertex2f(360-60-60-60,360);
+    glVertex2f(360-60-60-60,363);
+    glVertex2f(356-60-60-60,365);
+
+    glVertex2f(360-60-60,325 );// lamp stand
+    glVertex2f(362-60-60,325);
+    glVertex2f(362-60-60,365);
+    glVertex2f(360-60-60,365);
+
+    glVertex2f(356-60-60,362 );// lamp ligth
+    glVertex2f(360-60-60,360);
+    glVertex2f(360-60-60,363);
+    glVertex2f(356-60-60,365);
+
+    glVertex2f(360-60,325 );// lamp stand
+    glVertex2f(362-60,325);
+    glVertex2f(362-60,365);
+    glVertex2f(360-60,365);
+
+    glVertex2f(356-60,362 );// lamp ligth
+    glVertex2f(360-60,360);
+    glVertex2f(360-60,363);
+    glVertex2f(356-60,365);
+
+    //left
+    glVertex2f(360,325 );// lamp stand
+    glVertex2f(362,325);
+    glVertex2f(362,365);
+    glVertex2f(360,365);
+
+    glVertex2f(362,360 );// lamp ligth
+    glVertex2f(366,362);
+    glVertex2f(366,365);
+    glVertex2f(362,363);
+
+    glVertex2f(360+60,325 );// lamp stand
+    glVertex2f(362+60,325);
+    glVertex2f(362+60,365);
+    glVertex2f(360+60,365);
+
+    glVertex2f(362+60,360 );// lamp ligth
+    glVertex2f(366+60,362);
+    glVertex2f(366+60,365);
+    glVertex2f(362+60,363);
+
+    glVertex2f(360+60+60,325 );// lamp stand
+    glVertex2f(362+60+60,325);
+    glVertex2f(362+60+60,365);
+    glVertex2f(360+60+60,365);
+
+    glVertex2f(362+60+60,360 );// lamp ligth
+    glVertex2f(366+60+60,362);
+    glVertex2f(366+60+60,365);
+    glVertex2f(362+60+60,363);
+
+    glVertex2f(360+60+60+60,325 );// lamp stand
+    glVertex2f(362+60+60+60,325);
+    glVertex2f(362+60+60+60,365);
+    glVertex2f(360+60+60+60,365);
+
+    glVertex2f(362+60+60+60,360 );// lamp ligth
+    glVertex2f(366+60+60+60,362);
+    glVertex2f(366+60+60+60,365);
+    glVertex2f(362+60+60+60,363);
+
+    glVertex2f(360+60+60+60+60,325 );// lamp stand
+    glVertex2f(362+60+60+60+60,325);
+    glVertex2f(362+60+60+60+60,365);
+    glVertex2f(360+60+60+60+60,365);
+
+    glVertex2f(362+60+60+60+60,360 );// lamp ligth
+    glVertex2f(366+60+60+60+60,362);
+    glVertex2f(366+60+60+60+60,365);
+    glVertex2f(362+60+60+60+60,363);
+
+    glVertex2f(360+60+60+60+60+60,325 );// lamp stand
+    glVertex2f(362+60+60+60+60+60,325);
+    glVertex2f(362+60+60+60+60+60,365);
+    glVertex2f(360+60+60+60+60+60,365);
+
+    glVertex2f(362+60+60+60+60+60,360 );// lamp ligth
+    glVertex2f(366+60+60+60+60+60,362);
+    glVertex2f(366+60+60+60+60+60,365);
+    glVertex2f(362+60+60+60+60+60,363);
+
+
+    glEnd();
+}
+
+void nightleftlamp()
+{
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(322-60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(338-60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(329-60,358);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(322-60-60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(338-60-60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(329-60-60,358);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(322-60-60-60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(338-60-60-60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(329-60-60-60,358);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(322-60-60-60-60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(338-60-60-60-60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(329-60-60-60-60,358);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(322-60-60-60-60-60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(338-60-60-60-60-60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(329-60-60-60-60-60,358);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(322,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(338,325);
+     glColor3ub(255,255,254);
+    glVertex2f(329,358);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(324+60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(340+60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(333+60,358);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(324+60+60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(340+60+60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(333+60+60,358);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(324+60+60+60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(340+60+60+60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(333+60+60+60,358);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(324+60+60+60+60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(340+60+60+60+60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(333+60+60+60+60,358);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(324+60+60+60+60+60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(340+60+60+60+60+60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(333+60+60+60+60+60,358);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(90,90,90);
+    glVertex2f(324+60+60+60+60+60+60,325 );// lamp ligth
+    glColor3ub(255,255,254);
+    glVertex2f(340+60+60+60+60+60+60,325);
+     glColor3ub(255,255,254);
+    glVertex2f(333+60+60+60+60+60+60,358);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(30,30,30);
+
+    //right
+    glVertex2f(390-60-60-60-60-60-60,325 );// lamp stand
+    glVertex2f(392-60-60-60-60-60-60,325);
+    glVertex2f(392-60-60-60-60-60-60,360);
+    glVertex2f(390-60-60-60-60-60-60,360);
+
+    glVertex2f(386-60-60-60-60-60-60,357 );// lamp ligth
+    glVertex2f(390-60-60-60-60-60-60,355);
+    glVertex2f(390-60-60-60-60-60-60,358);
+    glVertex2f(386-60-60-60-60-60-60,360);
+
+    glVertex2f(390-60-60-60-60-60,325 );// lamp stand
+    glVertex2f(392-60-60-60-60-60,325);
+    glVertex2f(392-60-60-60-60-60,360);
+    glVertex2f(390-60-60-60-60-60,360);
+
+    glVertex2f(386-60-60-60-60-60,357 );// lamp ligth
+    glVertex2f(390-60-60-60-60-60,355);
+    glVertex2f(390-60-60-60-60-60,358);
+    glVertex2f(386-60-60-60-60-60,360);
+
+    glVertex2f(390-60-60-60-60,325 );// lamp stand
+    glVertex2f(392-60-60-60-60,325);
+    glVertex2f(392-60-60-60-60,360);
+    glVertex2f(390-60-60-60-60,360);
+
+    glVertex2f(386-60-60-60-60,357 );// lamp ligth
+    glVertex2f(390-60-60-60-60,355);
+    glVertex2f(390-60-60-60-60,358);
+    glVertex2f(386-60-60-60-60,360);
+
+    glVertex2f(390-60-60-60,325 );// lamp stand
+    glVertex2f(392-60-60-60,325);
+    glVertex2f(392-60-60-60,360);
+    glVertex2f(390-60-60-60,360);
+
+    glVertex2f(386-60-60-60,357 );// lamp ligth
+    glVertex2f(390-60-60-60,355);
+    glVertex2f(390-60-60-60,358);
+    glVertex2f(386-60-60-60,360);
+
+    glVertex2f(390-60-60,325 );// lamp stand
+    glVertex2f(392-60-60,325);
+    glVertex2f(392-60-60,360);
+    glVertex2f(390-60-60,360);
+
+    glVertex2f(386-60-60,357 );// lamp ligth
+    glVertex2f(390-60-60,355);
+    glVertex2f(390-60-60,358);
+    glVertex2f(386-60-60,360);
+
+    glVertex2f(390-60,325 );// lamp stand
+    glVertex2f(392-60,325);
+    glVertex2f(392-60,360);
+    glVertex2f(390-60,360);
+
+    glVertex2f(386-60,357 );// lamp ligth
+    glVertex2f(390-60,355);
+    glVertex2f(390-60,358);
+    glVertex2f(386-60,360);
+
+    //left
+    glVertex2f(390,325 );// lamp stand
+    glVertex2f(392,325);
+    glVertex2f(392,360);
+    glVertex2f(390,360);
+
+    glVertex2f(392,355 );// lamp ligth
+    glVertex2f(396,357);
+    glVertex2f(396,360);
+    glVertex2f(392,358);
+
+
+    glVertex2f(390+60,325 );// lamp stand
+    glVertex2f(392+60,325);
+    glVertex2f(392+60,360);
+    glVertex2f(390+60,360);
+
+    glVertex2f(392+60,355 );// lamp ligth
+    glVertex2f(396+60,357);
+    glVertex2f(396+60,360);
+    glVertex2f(392+60,358);
+
+    glVertex2f(390+60+60,325 );// lamp stand
+    glVertex2f(392+60+60,325);
+    glVertex2f(392+60+60,360);
+    glVertex2f(390+60+60,360);
+
+    glVertex2f(392+60+60,355 );// lamp ligth
+    glVertex2f(396+60+60,357);
+    glVertex2f(396+60+60,360);
+    glVertex2f(392+60+60,358);
+
+    glVertex2f(390+60+60+60,325 );// lamp stand
+    glVertex2f(392+60+60+60,325);
+    glVertex2f(392+60+60+60,360);
+    glVertex2f(390+60+60+60,360);
+
+    glVertex2f(392+60+60+60,355 );// lamp ligth
+    glVertex2f(396+60+60+60,357);
+    glVertex2f(396+60+60+60,360);
+    glVertex2f(392+60+60+60,358);
+
+     glVertex2f(390+60+60+60+60,325 );// lamp stand
+    glVertex2f(392+60+60+60+60,325);
+    glVertex2f(392+60+60+60+60,360);
+    glVertex2f(390+60+60+60+60,360);
+
+    glVertex2f(392+60+60+60+60,355 );// lamp ligth
+    glVertex2f(396+60+60+60+60,357);
+    glVertex2f(396+60+60+60+60,360);
+    glVertex2f(392+60+60+60+60,358);
+
+    glVertex2f(390+60+60+60+60+60,325 );// lamp stand
+    glVertex2f(392+60+60+60+60+60,325);
+    glVertex2f(392+60+60+60+60+60,360);
+    glVertex2f(390+60+60+60+60+60,360);
+
+    glVertex2f(392+60+60+60+60+60,355 );// lamp ligth
+    glVertex2f(396+60+60+60+60+60,357);
+    glVertex2f(396+60+60+60+60+60,360);
+    glVertex2f(392+60+60+60+60+60,358);
+
+    glEnd();
+
+}
+
+
+void nightriver()
+{
+    glBegin(GL_QUADS); //River
+glColor3ub(30,144,255);
+glVertex2f(0,0);
+glColor3ub(60,60,60);
+glVertex2f(0,270 ); // x, y
+glColor3ub(60,60,60);
+glVertex2f(700,270);
+glColor3ub(30,144,255);
+glVertex2f(700,0);// x, y
+glEnd();
+}
+
+void nightdisplay() {
+glClear(GL_COLOR_BUFFER_BIT); // Clear the color buffer with current clearing color
+glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+
+nightsky();
+moon();
+star();
+nightriver();
+updatetrain();
+nightleftlamp();
+updatecar1();
+updatecar2();
+updatebus();
+updatetrack();
+nightrightlamp();
+updatenouka2();
+bridge();
+updatenouka();
+updateship2();
+updateship1();
+
+glFlush();
+glutPostRedisplay();
+glutSwapBuffers();
+}
+
+void handleKeypress(unsigned char key, int x, int y)
+{
+switch (key) {
+
+case '1':
+    glutDisplayFunc(nightdisplay);
+    glutPostRedisplay();
+    break;
+
+case '2':
+    glutDisplayFunc(display);
+    glutPostRedisplay();
+    break;
+
+    glutPostRedisplay();
+ }
+}
+
 void position(void)
 {
 glClearColor(1.0f, 1.0f, 1.0f, 0.0f);
@@ -2616,7 +3212,7 @@ glutInitWindowSize(1320,660);
 glutCreateWindow("PADMA BRIDGE");
 glutDisplayFunc(display);
 position();
-//glutKeyboardFunc(handleKeypress);
+glutKeyboardFunc(handleKeypress);
 
 glutMainLoop();
 }
